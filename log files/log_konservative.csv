@@ -1,0 +1,472 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf400
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red254\green212\blue213;\red0\green0\blue0;\red41\green101\blue168;
+\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c86667\c86667;\cssrgb\c0\c0\c0;\cssrgb\c20000\c47843\c71765;
+\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12280\viewh14520\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \cb2 \expnd0\expndtw0\kerning0
+2019-08-29 11:40:20,693::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'KonservativeDK'\}\
+2019-08-29 11:40:20,695::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:40:20,695::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:40:20,697::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'KonservativeDK'), ('oauth_nonce', '25585805265507419941567071620'), ('oauth_timestamp', '1567071620'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:40:20,699::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=KonservativeDK&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=25585805265507419941567071620&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567071620&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:40:20,700::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:40:20,701::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3DKonservativeDK%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D25585805265507419941567071620%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567071620%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:40:20,703::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: tXzOgTVLESpoRDhQTBM1ZWc2548=\
+2019-08-29 11:40:20,704::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK}}\
+2019-08-29 11:40:20,705::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="25585805265507419941567071620", oauth_timestamp="1567071620", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="tXzOgTVLESpoRDhQTBM1ZWc2548%3D"'\}\
+2019-08-29 11:40:20,706::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:40:20,709::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 send: b'GET /1.1/statuses/user_timeline.json?id=KonservativeDK HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="25585805265507419941567071620", oauth_timestamp="1567071620", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="tXzOgTVLESpoRDhQTBM1ZWc2548%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:21,728::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=KonservativeDK HTTP/1.1" 200 69617\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 69617\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:40:21 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:40:21 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_MuTP3w88Y50UNiaS2wx9xA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:21 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_MuTP3w88Y50UNiaS2wx9xA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:21 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_MuTP3w88Y50UNiaS2wx9xA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:21 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 86ddd5e2ab51fda467f31e7ea507cbfd\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 899\
+header: x-rate-limit-reset: 1567072521\
+header: x-response-time: 253\
+header: x-transaction: 0055e4570073eac8\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:21,999::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'KonservativeDK', 'max_id': b'1139540357178363904'\}\
+2019-08-29 11:40:22,000::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:40:22,001::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:40:22,003::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'KonservativeDK'), ('max_id', '1139540357178363904'), ('oauth_nonce', '16169002080516507221567071622'), ('oauth_timestamp', '1567071622'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:40:22,005::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=KonservativeDK&max_id=1139540357178363904&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=16169002080516507221567071622&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567071622&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:40:22,006::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:40:22,007::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3DKonservativeDK%26max_id%3D1139540357178363904%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D16169002080516507221567071622%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567071622%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:40:22,008::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: c3/XYz9G4C6Ra/xYc0yu7XP1dIo=\
+2019-08-29 11:40:22,009::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1139540357178363904"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1139540357178363904}}\
+2019-08-29 11:40:22,011::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="16169002080516507221567071622", oauth_timestamp="1567071622", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="c3%2FXYz9G4C6Ra%2FxYc0yu7XP1dIo%3D"'\}\
+2019-08-29 11:40:22,012::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:40:22,015::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 Tweet from:  2019-06-14 14:29:27  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1139540357178363904 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="16169002080516507221567071622", oauth_timestamp="1567071622", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="c3%2FXYz9G4C6Ra%2FxYc0yu7XP1dIo%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:22,480::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1139540357178363904 HTTP/1.1" 200 83554\
+2019-08-29 11:40:22,625::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'KonservativeDK', 'max_id': b'1135445879329034240'\}\
+2019-08-29 11:40:22,626::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:40:22,627::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:40:22,628::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'KonservativeDK'), ('max_id', '1135445879329034240'), ('oauth_nonce', '28611478578657257031567071622'), ('oauth_timestamp', '1567071622'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:40:22,628::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=KonservativeDK&max_id=1135445879329034240&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=28611478578657257031567071622&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567071622&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:40:22,629::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:40:22,631::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3DKonservativeDK%26max_id%3D1135445879329034240%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D28611478578657257031567071622%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567071622%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:40:22,632::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: sPLaMjbm/nHNHB+LvHRt29mV9jc=\
+2019-08-29 11:40:22,633::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1135445879329034240"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1135445879329034240}}\
+2019-08-29 11:40:22,634::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="28611478578657257031567071622", oauth_timestamp="1567071622", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="sPLaMjbm%2FnHNHB%2BLvHRt29mV9jc%3D"'\}\
+2019-08-29 11:40:22,635::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:40:22,640::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 83554\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:40:22 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:40:22 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_lVQFw1WqxWS/ohhaA6M6wA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:22 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_lVQFw1WqxWS/ohhaA6M6wA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:22 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_lVQFw1WqxWS/ohhaA6M6wA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:22 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 72a8aa62ff1ff7ee466f8fc67d6509e8\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 898\
+header: x-rate-limit-reset: 1567072521\
+header: x-response-time: 178\
+header: x-transaction: 00289ad40063ccb6\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-06-03 07:19:27  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1135445879329034240 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="28611478578657257031567071622", oauth_timestamp="1567071622", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="sPLaMjbm%2FnHNHB%2BLvHRt29mV9jc%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:23,396::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1135445879329034240 HTTP/1.1" 200 120878\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 120878\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:40:23 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:40:23 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_DsoC2K9w5rRTkl8rxJhbQw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:23 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_DsoC2K9w5rRTkl8rxJhbQw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:23 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_DsoC2K9w5rRTkl8rxJhbQw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:23 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 1dea6399838665d27824bb88e5effdff\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 897\
+header: x-rate-limit-reset: 1567072521\
+header: x-response-time: 209\
+header: x-transaction: 00bcd8c000a7af1d\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:23,604::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'KonservativeDK', 'max_id': b'1132546931941662720'\}\
+2019-08-29 11:40:23,605::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:40:23,606::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:40:23,607::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'KonservativeDK'), ('max_id', '1132546931941662720'), ('oauth_nonce', '117603409891329345141567071623'), ('oauth_timestamp', '1567071623'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:40:23,608::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=KonservativeDK&max_id=1132546931941662720&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=117603409891329345141567071623&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567071623&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:40:23,610::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:40:23,611::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3DKonservativeDK%26max_id%3D1132546931941662720%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D117603409891329345141567071623%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567071623%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:40:23,612::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: vOLbcXscrmYOTBpXL6f0/qx2lFY=\
+2019-08-29 11:40:23,613::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1132546931941662720"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1132546931941662720}}\
+2019-08-29 11:40:23,614::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="117603409891329345141567071623", oauth_timestamp="1567071623", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="vOLbcXscrmYOTBpXL6f0%2Fqx2lFY%3D"'\}\
+2019-08-29 11:40:23,615::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:40:23,622::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 Tweet from:  2019-05-26 07:20:04  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1132546931941662720 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="117603409891329345141567071623", oauth_timestamp="1567071623", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="vOLbcXscrmYOTBpXL6f0%2Fqx2lFY%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:24,140::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1132546931941662720 HTTP/1.1" 200 111655\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 111655\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:40:24 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:40:24 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_ReVTuyPqDk7egElOLpD9rQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:24 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_ReVTuyPqDk7egElOLpD9rQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:24 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_ReVTuyPqDk7egElOLpD9rQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:24 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: d399b23b5615b47b43470e5bb608a589\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 896\
+header: x-rate-limit-reset: 1567072521\
+header: x-response-time: 236\
+header: x-transaction: 0016b46e0063c7b3\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:24,391::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'KonservativeDK', 'max_id': b'1130007215581093888'\}\
+2019-08-29 11:40:24,392::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:40:24,393::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:40:24,394::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'KonservativeDK'), ('max_id', '1130007215581093888'), ('oauth_nonce', '166170701097440619471567071624'), ('oauth_timestamp', '1567071624'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:40:24,397::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=KonservativeDK&max_id=1130007215581093888&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=166170701097440619471567071624&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567071624&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:40:24,397::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:40:24,398::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3DKonservativeDK%26max_id%3D1130007215581093888%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D166170701097440619471567071624%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567071624%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:40:24,399::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: aJysva8VCnOEBLdIuu3OkMd8/JA=\
+2019-08-29 11:40:24,400::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1130007215581093888"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1130007215581093888}}\
+2019-08-29 11:40:24,401::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="166170701097440619471567071624", oauth_timestamp="1567071624", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="aJysva8VCnOEBLdIuu3OkMd8%2FJA%3D"'\}\
+2019-08-29 11:40:24,404::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:40:24,406::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 Tweet from:  2019-05-19 07:08:09  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1130007215581093888 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="166170701097440619471567071624", oauth_timestamp="1567071624", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="aJysva8VCnOEBLdIuu3OkMd8%2FJA%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:24,858::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1130007215581093888 HTTP/1.1" 200 103146\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 103146\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:40:24 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:40:24 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_OEiIUwH2wJsiYoiFsDLYZQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:24 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_OEiIUwH2wJsiYoiFsDLYZQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:24 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_OEiIUwH2wJsiYoiFsDLYZQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:24 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 046d304035585aac142f4dee3e3f0a42\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 895\
+header: x-rate-limit-reset: 1567072521\
+header: x-response-time: 182\
+header: x-transaction: 002dc35a00b84849\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:25,080::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'KonservativeDK', 'max_id': b'1128360664173547520'\}\
+2019-08-29 11:40:25,081::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:40:25,082::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:40:25,084::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'KonservativeDK'), ('max_id', '1128360664173547520'), ('oauth_nonce', '20361729660632566791567071625'), ('oauth_timestamp', '1567071625'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:40:25,085::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=KonservativeDK&max_id=1128360664173547520&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=20361729660632566791567071625&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567071625&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:40:25,087::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:40:25,088::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3DKonservativeDK%26max_id%3D1128360664173547520%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D20361729660632566791567071625%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567071625%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:40:25,089::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: eY71HhXzFxZtC0VDvXdPRhCFntg=\
+2019-08-29 11:40:25,090::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1128360664173547520"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1128360664173547520}}\
+2019-08-29 11:40:25,092::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="20361729660632566791567071625", oauth_timestamp="1567071625", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="eY71HhXzFxZtC0VDvXdPRhCFntg%3D"'\}\
+2019-08-29 11:40:25,093::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:40:25,095::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 Tweet from:  2019-05-14 18:05:20  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1128360664173547520 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="20361729660632566791567071625", oauth_timestamp="1567071625", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="eY71HhXzFxZtC0VDvXdPRhCFntg%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:25,612::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1128360664173547520 HTTP/1.1" 200 111367\
+2019-08-29 11:40:25,786::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'KonservativeDK', 'max_id': b'1127437542628970497'\}\
+2019-08-29 11:40:25,787::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:40:25,788::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:40:25,790::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'KonservativeDK'), ('max_id', '1127437542628970497'), ('oauth_nonce', '122843927361155356911567071625'), ('oauth_timestamp', '1567071625'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:40:25,791::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=KonservativeDK&max_id=1127437542628970497&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=122843927361155356911567071625&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567071625&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:40:25,792::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:40:25,793::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3DKonservativeDK%26max_id%3D1127437542628970497%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D122843927361155356911567071625%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567071625%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:40:25,794::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: an9wTzx0/Y4wCCguaUk85ej3sNM=\
+2019-08-29 11:40:25,795::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1127437542628970497"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1127437542628970497}}\
+2019-08-29 11:40:25,796::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="122843927361155356911567071625", oauth_timestamp="1567071625", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="an9wTzx0%2FY4wCCguaUk85ej3sNM%3D"'\}\
+2019-08-29 11:40:25,797::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:40:25,801::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 111367\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:40:25 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:40:25 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_4Me634ltPdnbu0dOB0EVWA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:25 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_4Me634ltPdnbu0dOB0EVWA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:25 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_4Me634ltPdnbu0dOB0EVWA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:25 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 5e1ef9511dfb7424d5fcb6af2707eb5a\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 894\
+header: x-rate-limit-reset: 1567072521\
+header: x-response-time: 192\
+header: x-transaction: 009dc4ee00d28bad\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-12 04:57:11  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1127437542628970497 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="122843927361155356911567071625", oauth_timestamp="1567071625", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="an9wTzx0%2FY4wCCguaUk85ej3sNM%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:26,645::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1127437542628970497 HTTP/1.1" 200 111009\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 111009\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:40:26 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:40:26 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_UJSGUo/y5cwZ5FcLrvzq5A=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:26 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_UJSGUo/y5cwZ5FcLrvzq5A=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:26 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_UJSGUo/y5cwZ5FcLrvzq5A=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:26 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: e531275a0ab3dbcaafd52becf0dd1ae5\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 893\
+header: x-rate-limit-reset: 1567072521\
+header: x-response-time: 195\
+header: x-transaction: 0001fb590060b851\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:26,901::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'KonservativeDK', 'max_id': b'1126239428278738947'\}\
+2019-08-29 11:40:26,902::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:40:26,903::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:40:26,904::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'KonservativeDK'), ('max_id', '1126239428278738947'), ('oauth_nonce', '136948298039097613031567071626'), ('oauth_timestamp', '1567071626'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:40:26,905::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=KonservativeDK&max_id=1126239428278738947&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=136948298039097613031567071626&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567071626&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:40:26,906::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:40:26,907::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3DKonservativeDK%26max_id%3D1126239428278738947%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D136948298039097613031567071626%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567071626%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:40:26,908::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: PW7u4bC+LbY1R3Hc24Y6J27kbhk=\
+2019-08-29 11:40:26,909::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1126239428278738947"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1126239428278738947}}\
+2019-08-29 11:40:26,912::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="136948298039097613031567071626", oauth_timestamp="1567071626", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="PW7u4bC%2BLbY1R3Hc24Y6J27kbhk%3D"'\}\
+2019-08-29 11:40:26,913::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:40:26,916::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 Tweet from:  2019-05-08 21:36:18  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1126239428278738947 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="136948298039097613031567071626", oauth_timestamp="1567071626", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="PW7u4bC%2BLbY1R3Hc24Y6J27kbhk%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:27,473::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1126239428278738947 HTTP/1.1" 200 102211\
+2019-08-29 11:40:27,659::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'KonservativeDK', 'max_id': b'1125820423353131008'\}\
+2019-08-29 11:40:27,660::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:40:27,662::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:40:27,663::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'KonservativeDK'), ('max_id', '1125820423353131008'), ('oauth_nonce', '136520039947386627591567071627'), ('oauth_timestamp', '1567071627'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:40:27,665::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=KonservativeDK&max_id=1125820423353131008&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=136520039947386627591567071627&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567071627&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:40:27,665::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:40:27,667::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3DKonservativeDK%26max_id%3D1125820423353131008%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D136520039947386627591567071627%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567071627%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 102211\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:40:27 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:40:27 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_Qlfy/fgrsR9gGlVNjLGgPA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:27 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_Qlfy/fgrsR9gGlVNjLGgPA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:27 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_Qlfy/fgrsR9gGlVNjLGgPA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:27 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: d78f4550cb77d8302a66f1621e714688\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 892\
+header: x-rate-limit-reset: 1567072521\
+header: x-response-time: 191\
+header: x-transaction: 000d477000841a4c\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-07 17:51:20  fetched\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:27,669::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: pT9Pbw5NSFcuw9PFIlR8l6AewmI=\
+2019-08-29 11:40:27,670::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1125820423353131008"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1125820423353131008}}\
+2019-08-29 11:40:27,675::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="136520039947386627591567071627", oauth_timestamp="1567071627", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="pT9Pbw5NSFcuw9PFIlR8l6AewmI%3D"'\}\
+2019-08-29 11:40:27,677::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:40:27,680::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 send: b'GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1125820423353131008 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="136520039947386627591567071627", oauth_timestamp="1567071627", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="pT9Pbw5NSFcuw9PFIlR8l6AewmI%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:40:28,484::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=KonservativeDK&max_id=1125820423353131008 HTTP/1.1" 200 112583\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 112583\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:40:28 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:40:28 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_Xb6u3FnTKS96GmC0HQ3lvg=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:28 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_Xb6u3FnTKS96GmC0HQ3lvg=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:28 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_Xb6u3FnTKS96GmC0HQ3lvg=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:40:28 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 8b9b0ed96a0baae00c62023bfb6747ba\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 891\
+header: x-rate-limit-reset: 1567072521\
+header: x-response-time: 201\
+header: x-transaction: 0075341c00bf3921\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0}

@@ -1,0 +1,1030 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf400
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red254\green212\blue213;\red0\green0\blue0;\red41\green101\blue168;
+\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c86667\c86667;\cssrgb\c0\c0\c0;\cssrgb\c20000\c47843\c71765;
+\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13080\viewh13820\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \cb2 \expnd0\expndtw0\kerning0
+2019-08-29 11:21:58,916::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk'\}\
+2019-08-29 11:21:58,917::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:21:58,918::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:21:58,920::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('oauth_nonce', '36020100618145548491567070518'), ('oauth_timestamp', '1567070518'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:21:58,921::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=36020100618145548491567070518&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070518&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:21:58,922::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:21:58,923::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D36020100618145548491567070518%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070518%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:21:58,925::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: mV4xU7Ed6uR1F9mwUlou20hK7Fc=\
+2019-08-29 11:21:58,926::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk}}\
+2019-08-29 11:21:58,927::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="36020100618145548491567070518", oauth_timestamp="1567070518", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="mV4xU7Ed6uR1F9mwUlou20hK7Fc%3D"'\}\
+2019-08-29 11:21:58,929::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:21:58,933::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 send: b'GET /1.1/statuses/user_timeline.json?id=venstredk HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="36020100618145548491567070518", oauth_timestamp="1567070518", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="mV4xU7Ed6uR1F9mwUlou20hK7Fc%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:21:59,435::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk HTTP/1.1" 200 114101\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 114101\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:21:59 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:21:59 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_mgAaarjHQFlqkUOgDoVRyw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:21:59 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_mgAaarjHQFlqkUOgDoVRyw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:21:59 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_mgAaarjHQFlqkUOgDoVRyw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:21:59 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 99c13c9f220d0f383f50926e0be4d48d\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 899\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 193\
+header: x-transaction: 00902ba700d5e522\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:21:59,658::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1162988515371704320'\}\
+2019-08-29 11:21:59,659::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:21:59,660::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:21:59,662::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1162988515371704320'), ('oauth_nonce', '109429263390202585321567070519'), ('oauth_timestamp', '1567070519'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:21:59,663::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1162988515371704320&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=109429263390202585321567070519&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070519&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:21:59,664::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:21:59,665::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1162988515371704320%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D109429263390202585321567070519%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070519%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:21:59,666::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: f8Ignw7QkiPK1VAMd6D//yPQSvw=\
+2019-08-29 11:21:59,668::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1162988515371704320"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1162988515371704320}}\
+2019-08-29 11:21:59,669::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="109429263390202585321567070519", oauth_timestamp="1567070519", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="f8Ignw7QkiPK1VAMd6D%2F%2FyPQSvw%3D"'\}\
+2019-08-29 11:21:59,669::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:21:59,675::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 Tweet from:  2019-08-18 07:24:04  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1162988515371704320 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="109429263390202585321567070519", oauth_timestamp="1567070519", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="f8Ignw7QkiPK1VAMd6D%2F%2FyPQSvw%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:00,618::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1162988515371704320 HTTP/1.1" 200 115347\
+2019-08-29 11:22:00,803::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1159807511224037377'\}\
+2019-08-29 11:22:00,804::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:00,806::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 115347\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:00 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:00 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_y0r3Bl2ewVj2T5t61+4DrA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:00 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_y0r3Bl2ewVj2T5t61+4DrA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:00 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_y0r3Bl2ewVj2T5t61+4DrA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:00 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: c31728ee25b0e5e0ab7fa2c4b072dcaf\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 898\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 233\
+header: x-transaction: 00c3885700f9b056\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-08-09 12:43:53  fetched\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:00,809::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1159807511224037377'), ('oauth_nonce', '113295709665938339661567070520'), ('oauth_timestamp', '1567070520'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:00,811::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1159807511224037377&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=113295709665938339661567070520&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070520&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:00,812::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:00,812::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1159807511224037377%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D113295709665938339661567070520%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070520%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:00,814::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: eNy+1jecbDLUTyaEteBZuWcvC/c=\
+2019-08-29 11:22:00,819::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1159807511224037377"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1159807511224037377}}\
+2019-08-29 11:22:00,820::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="113295709665938339661567070520", oauth_timestamp="1567070520", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="eNy%2B1jecbDLUTyaEteBZuWcvC%2Fc%3D"'\}\
+2019-08-29 11:22:00,821::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:00,826::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1159807511224037377 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="113295709665938339661567070520", oauth_timestamp="1567070520", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="eNy%2B1jecbDLUTyaEteBZuWcvC%2Fc%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:01,351::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1159807511224037377 HTTP/1.1" 200 111292\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 111292\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:01 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:01 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_Fqdq7vx34r4JTwMScSfdKA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:01 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_Fqdq7vx34r4JTwMScSfdKA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:01 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_Fqdq7vx34r4JTwMScSfdKA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:01 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 51b5598e5c0221b94cb6442db4704a9a\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 897\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 191\
+header: x-transaction: 0000465e00f48493\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:01,572::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1154637891664064512'\}\
+2019-08-29 11:22:01,573::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:01,574::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:01,575::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1154637891664064512'), ('oauth_nonce', '4656757916067556251567070521'), ('oauth_timestamp', '1567070521'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:01,577::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1154637891664064512&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=4656757916067556251567070521&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070521&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:01,578::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:01,579::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1154637891664064512%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D4656757916067556251567070521%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070521%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:01,580::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: izrKQbSiTwHXJDMHqKJIvfDKrlw=\
+2019-08-29 11:22:01,581::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1154637891664064512"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1154637891664064512}}\
+2019-08-29 11:22:01,582::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="4656757916067556251567070521", oauth_timestamp="1567070521", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="izrKQbSiTwHXJDMHqKJIvfDKrlw%3D"'\}\
+2019-08-29 11:22:01,583::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:01,586::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 Tweet from:  2019-07-26 06:21:40  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1154637891664064512 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="4656757916067556251567070521", oauth_timestamp="1567070521", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="izrKQbSiTwHXJDMHqKJIvfDKrlw%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:02,062::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1154637891664064512 HTTP/1.1" 200 120669\
+2019-08-29 11:22:02,246::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1144251435216977920'\}\
+2019-08-29 11:22:02,247::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:02,249::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:02,251::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1144251435216977920'), ('oauth_nonce', '47157842266235898651567070522'), ('oauth_timestamp', '1567070522'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:02,252::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1144251435216977920&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=47157842266235898651567070522&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070522&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:02,253::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:02,254::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1144251435216977920%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D47157842266235898651567070522%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070522%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:02,255::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: he6qezTb4O44DP94S3Mer1xr2IU=\
+2019-08-29 11:22:02,257::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1144251435216977920"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1144251435216977920}}\
+2019-08-29 11:22:02,259::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="47157842266235898651567070522", oauth_timestamp="1567070522", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="he6qezTb4O44DP94S3Mer1xr2IU%3D"'\}\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 120669\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:02 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:01 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_pDOo4CLcXM+vUCM7SKNy3A=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:01 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_pDOo4CLcXM+vUCM7SKNy3A=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:01 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_pDOo4CLcXM+vUCM7SKNy3A=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:01 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 5897c6028ad16b4c9c0e375343da595e\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 896\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 207\
+header: x-transaction: 00b0b001006244ce\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-06-27 14:29:35  fetched\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:02,260::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:02,263::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1144251435216977920 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="47157842266235898651567070522", oauth_timestamp="1567070522", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="he6qezTb4O44DP94S3Mer1xr2IU%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:03,080::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1144251435216977920 HTTP/1.1" 200 101018\
+2019-08-29 11:22:03,242::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1136231632581660672'\}\
+2019-08-29 11:22:03,243::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:03,244::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:03,245::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1136231632581660672'), ('oauth_nonce', '17001012604598509051567070523'), ('oauth_timestamp', '1567070523'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:03,247::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1136231632581660672&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=17001012604598509051567070523&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070523&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:03,249::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:03,250::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1136231632581660672%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D17001012604598509051567070523%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070523%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:03,251::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: voeRpvP2hN1txEvmvaDNUrfBbkM=\
+2019-08-29 11:22:03,252::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1136231632581660672"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1136231632581660672}}\
+2019-08-29 11:22:03,252::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="17001012604598509051567070523", oauth_timestamp="1567070523", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="voeRpvP2hN1txEvmvaDNUrfBbkM%3D"'\}\
+2019-08-29 11:22:03,253::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:03,257::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 101018\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:02 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:02 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_hPJQGCka5+5nBc2ooZr3TQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:02 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_hPJQGCka5+5nBc2ooZr3TQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:02 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_hPJQGCka5+5nBc2ooZr3TQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:02 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: df474cfd379036adf5b0641be58fa397\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 895\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 319\
+header: x-transaction: 00f5b97000d6b161\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-06-05 11:21:46  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1136231632581660672 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="17001012604598509051567070523", oauth_timestamp="1567070523", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="voeRpvP2hN1txEvmvaDNUrfBbkM%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:04,296::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1136231632581660672 HTTP/1.1" 200 77013\
+2019-08-29 11:22:04,439::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1135959554376835077'\}\
+2019-08-29 11:22:04,440::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:04,443::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:04,445::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1135959554376835077'), ('oauth_nonce', '64127985913675887681567070524'), ('oauth_timestamp', '1567070524'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:04,446::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1135959554376835077&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=64127985913675887681567070524&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070524&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:04,447::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:04,448::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1135959554376835077%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D64127985913675887681567070524%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070524%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:04,448::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: Guc09HbDCx/j3CsocJ0z8yotJDs=\
+2019-08-29 11:22:04,449::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1135959554376835077"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1135959554376835077}}\
+2019-08-29 11:22:04,451::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="64127985913675887681567070524", oauth_timestamp="1567070524", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="Guc09HbDCx%2Fj3CsocJ0z8yotJDs%3D"'\}\
+2019-08-29 11:22:04,452::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:04,455::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 77013\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:03 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:03 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_iEPa4U+YcnL9DL9bBCjeyg=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:03 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_iEPa4U+YcnL9DL9bBCjeyg=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:03 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_iEPa4U+YcnL9DL9bBCjeyg=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:03 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: b64788972afb7600b9d889c4e488940d\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 894\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 244\
+header: x-transaction: 00414d57005fa236\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-06-04 17:20:37  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1135959554376835077 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="64127985913675887681567070524", oauth_timestamp="1567070524", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="Guc09HbDCx%2Fj3CsocJ0z8yotJDs%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:04,907::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1135959554376835077 HTTP/1.1" 200 72829\
+2019-08-29 11:22:05,029::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1135600163450490880'\}\
+2019-08-29 11:22:05,030::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:05,031::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:05,033::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1135600163450490880'), ('oauth_nonce', '37746524313612123861567070525'), ('oauth_timestamp', '1567070525'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:05,035::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1135600163450490880&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=37746524313612123861567070525&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070525&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:05,036::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:05,037::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1135600163450490880%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D37746524313612123861567070525%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070525%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:05,038::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: hBnjJQiqL433gp6nd2PQyRdhT7c=\
+2019-08-29 11:22:05,039::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1135600163450490880"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1135600163450490880}}\
+2019-08-29 11:22:05,040::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="37746524313612123861567070525", oauth_timestamp="1567070525", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="hBnjJQiqL433gp6nd2PQyRdhT7c%3D"'\}\
+2019-08-29 11:22:05,042::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:05,045::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 72829\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:04 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:04 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_7suKM/T7yYSiaeFOfxylaQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:04 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_7suKM/T7yYSiaeFOfxylaQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:04 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_7suKM/T7yYSiaeFOfxylaQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:04 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: c2a7ab0a99cdfa5ce54a7f48120b2394\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 893\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 177\
+header: x-transaction: 00a6550a009a350e\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-06-03 17:32:32  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1135600163450490880 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="37746524313612123861567070525", oauth_timestamp="1567070525", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="hBnjJQiqL433gp6nd2PQyRdhT7c%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:05,517::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1135600163450490880 HTTP/1.1" 200 80603\
+2019-08-29 11:22:05,643::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1135201336151224321'\}\
+2019-08-29 11:22:05,648::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:05,650::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:05,651::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1135201336151224321'), ('oauth_nonce', '89256558538280090441567070525'), ('oauth_timestamp', '1567070525'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:05,653::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1135201336151224321&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=89256558538280090441567070525&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070525&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:05,654::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:05,655::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1135201336151224321%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D89256558538280090441567070525%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070525%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:05,656::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: o2GJYBdAO6miBUZLIOaHzGR8G0k=\
+2019-08-29 11:22:05,658::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1135201336151224321"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1135201336151224321}}\
+2019-08-29 11:22:05,660::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="89256558538280090441567070525", oauth_timestamp="1567070525", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="o2GJYBdAO6miBUZLIOaHzGR8G0k%3D"'\}\
+2019-08-29 11:22:05,662::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:05,665::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 80603\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:05 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:05 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_2KP0mJW+btPycuxTlovrWQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:05 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_2KP0mJW+btPycuxTlovrWQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:05 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_2KP0mJW+btPycuxTlovrWQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:05 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 3a3b96ce83153402bb8575448871a0d5\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 892\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 190\
+header: x-transaction: 00a8c36500847dbe\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-06-02 15:07:44  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1135201336151224321 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="89256558538280090441567070525", oauth_timestamp="1567070525", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="o2GJYBdAO6miBUZLIOaHzGR8G0k%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:06,204::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1135201336151224321 HTTP/1.1" 200 107175\
+2019-08-29 11:22:06,377::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1133666294132293632'\}\
+2019-08-29 11:22:06,378::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:06,380::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:06,381::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1133666294132293632'), ('oauth_nonce', '108816697771343685541567070526'), ('oauth_timestamp', '1567070526'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:06,383::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1133666294132293632&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=108816697771343685541567070526&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070526&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:06,384::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:06,385::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1133666294132293632%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D108816697771343685541567070526%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070526%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:06,386::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: NmQuYFzA669GszWrHJkSZh7fPKw=\
+2019-08-29 11:22:06,388::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1133666294132293632"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1133666294132293632}}\
+2019-08-29 11:22:06,389::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="108816697771343685541567070526", oauth_timestamp="1567070526", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="NmQuYFzA669GszWrHJkSZh7fPKw%3D"'\}\
+2019-08-29 11:22:06,389::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:06,393::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 107175\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:06 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:06 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_dPbnQFXC1LEpjvHVEM1L6Q=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:06 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_dPbnQFXC1LEpjvHVEM1L6Q=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:06 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_dPbnQFXC1LEpjvHVEM1L6Q=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:06 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: d2853301315241a8f652ae40ae281337\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 891\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 271\
+header: x-transaction: 00800125005a3fc9\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-29 09:28:01  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1133666294132293632 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="108816697771343685541567070526", oauth_timestamp="1567070526", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="NmQuYFzA669GszWrHJkSZh7fPKw%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:06,860::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1133666294132293632 HTTP/1.1" 200 89844\
+2019-08-29 11:22:06,989::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1132873826965053440'\}\
+2019-08-29 11:22:06,990::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:06,991::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:06,993::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1132873826965053440'), ('oauth_nonce', '20105990756677985651567070526'), ('oauth_timestamp', '1567070526'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:06,995::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1132873826965053440&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=20105990756677985651567070526&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070526&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:06,996::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:06,997::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1132873826965053440%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D20105990756677985651567070526%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070526%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:06,999::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: h1eNPjiVvJrxXXsdhVkU9W+uQUE=\
+2019-08-29 11:22:07,000::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1132873826965053440"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1132873826965053440}}\
+2019-08-29 11:22:07,001::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="20105990756677985651567070526", oauth_timestamp="1567070526", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="h1eNPjiVvJrxXXsdhVkU9W%2BuQUE%3D"'\}\
+2019-08-29 11:22:07,002::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:07,005::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 89844\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:06 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:06 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_bDLZHIwRvrP/xTb/Ok2Miw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:06 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_bDLZHIwRvrP/xTb/Ok2Miw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:06 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_bDLZHIwRvrP/xTb/Ok2Miw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:06 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 2169d1a11adbabc419bbd524d5c99c28\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 890\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 180\
+header: x-transaction: 00b61a170052dae0\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-27 04:59:02  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1132873826965053440 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="20105990756677985651567070526", oauth_timestamp="1567070526", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="h1eNPjiVvJrxXXsdhVkU9W%2BuQUE%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:07,519::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1132873826965053440 HTTP/1.1" 200 86945\
+2019-08-29 11:22:07,643::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1132176378479206400'\}\
+2019-08-29 11:22:07,645::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:07,646::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:07,648::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1132176378479206400'), ('oauth_nonce', '94461655207495600111567070527'), ('oauth_timestamp', '1567070527'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:07,649::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1132176378479206400&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=94461655207495600111567070527&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070527&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:07,650::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:07,651::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1132176378479206400%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D94461655207495600111567070527%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070527%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:07,651::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: e3uWb70MB7IsMqQh21UHLoBHwwo=\
+2019-08-29 11:22:07,652::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1132176378479206400"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1132176378479206400}}\
+2019-08-29 11:22:07,653::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="94461655207495600111567070527", oauth_timestamp="1567070527", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="e3uWb70MB7IsMqQh21UHLoBHwwo%3D"'\}\
+2019-08-29 11:22:07,654::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:07,658::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 86945\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:07 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:07 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_6q/q7ubOfMRSMWvWPwNYMQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:07 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_6q/q7ubOfMRSMWvWPwNYMQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:07 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_6q/q7ubOfMRSMWvWPwNYMQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:07 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 18a86a0c0a38e7b22e276e7664261ea9\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 889\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 206\
+header: x-transaction: 00cd8fc800f54231\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-25 06:47:38  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1132176378479206400 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="94461655207495600111567070527", oauth_timestamp="1567070527", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="e3uWb70MB7IsMqQh21UHLoBHwwo%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:08,117::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1132176378479206400 HTTP/1.1" 200 100265\
+2019-08-29 11:22:08,294::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1131497591982755840'\}\
+2019-08-29 11:22:08,297::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:08,297::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:08,299::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1131497591982755840'), ('oauth_nonce', '39765833337366971171567070528'), ('oauth_timestamp', '1567070528'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:08,301::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1131497591982755840&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=39765833337366971171567070528&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070528&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:08,302::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:08,306::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1131497591982755840%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D39765833337366971171567070528%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070528%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:08,308::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: vRcP3S3KzHZIr944mmbDltME2Q4=\
+2019-08-29 11:22:08,311::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1131497591982755840"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1131497591982755840}}\
+2019-08-29 11:22:08,312::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="39765833337366971171567070528", oauth_timestamp="1567070528", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="vRcP3S3KzHZIr944mmbDltME2Q4%3D"'\}\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 100265\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:08 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:08 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_78MwUt2y265nLSBrMOHtBw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:08 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_78MwUt2y265nLSBrMOHtBw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:08 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_78MwUt2y265nLSBrMOHtBw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:08 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 1334a487238154cd83c21d5cd4abfada\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 888\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 186\
+header: x-transaction: 0085263200576488\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-23 09:50:22  fetched\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:08,313::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:08,316::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1131497591982755840 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="39765833337366971171567070528", oauth_timestamp="1567070528", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="vRcP3S3KzHZIr944mmbDltME2Q4%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:08,895::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1131497591982755840 HTTP/1.1" 200 81374\
+2019-08-29 11:22:09,026::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1130922582872645632'\}\
+2019-08-29 11:22:09,027::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:09,028::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:09,030::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1130922582872645632'), ('oauth_nonce', '9587933512003677201567070529'), ('oauth_timestamp', '1567070529'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:09,031::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1130922582872645632&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=9587933512003677201567070529&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070529&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:09,033::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:09,034::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1130922582872645632%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D9587933512003677201567070529%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070529%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:09,034::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: 09tuwrqTiHtmpZZ5XDHbMRIm6X4=\
+2019-08-29 11:22:09,035::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1130922582872645632"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1130922582872645632}}\
+2019-08-29 11:22:09,036::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="9587933512003677201567070529", oauth_timestamp="1567070529", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="09tuwrqTiHtmpZZ5XDHbMRIm6X4%3D"'\}\
+2019-08-29 11:22:09,036::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:09,041::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 81374\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:08 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:08 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_sTCoiY+Ydq6YPtv2Bdo9xw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:08 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_sTCoiY+Ydq6YPtv2Bdo9xw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:08 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_sTCoiY+Ydq6YPtv2Bdo9xw=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:08 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: b9805839b1dcfd003110f5c61bb078c7\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 887\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 266\
+header: x-transaction: 00a6bf3f002c5ad0\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-21 19:45:29  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1130922582872645632 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="9587933512003677201567070529", oauth_timestamp="1567070529", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="09tuwrqTiHtmpZZ5XDHbMRIm6X4%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:09,823::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1130922582872645632 HTTP/1.1" 200 86896\
+2019-08-29 11:22:09,964::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1130183918114791424'\}\
+2019-08-29 11:22:09,965::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:09,966::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:09,968::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1130183918114791424'), ('oauth_nonce', '50514152497169928441567070529'), ('oauth_timestamp', '1567070529'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:09,971::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1130183918114791424&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=50514152497169928441567070529&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070529&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:09,972::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:09,972::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1130183918114791424%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D50514152497169928441567070529%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070529%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:09,977::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: 4LLOnK4dI4sHkJ+p1cfAy5lk0F4=\
+2019-08-29 11:22:09,980::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1130183918114791424"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1130183918114791424}}\
+2019-08-29 11:22:09,980::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="50514152497169928441567070529", oauth_timestamp="1567070529", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="4LLOnK4dI4sHkJ%2Bp1cfAy5lk0F4%3D"'\}\
+2019-08-29 11:22:09,981::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:09,985::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 86896\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:09 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:09 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_5hIQgnUrI7ZC17HrwE614w=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:09 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_5hIQgnUrI7ZC17HrwE614w=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:09 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_5hIQgnUrI7ZC17HrwE614w=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:09 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 472d3d3906a89d4396ab35d2a69731ab\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 886\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 188\
+header: x-transaction: 00c0851200a6fa0f\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-19 18:50:18  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1130183918114791424 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="50514152497169928441567070529", oauth_timestamp="1567070529", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="4LLOnK4dI4sHkJ%2Bp1cfAy5lk0F4%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:10,449::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1130183918114791424 HTTP/1.1" 200 73065\
+2019-08-29 11:22:10,583::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1129670098887872513'\}\
+2019-08-29 11:22:10,584::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:10,585::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:10,587::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1129670098887872513'), ('oauth_nonce', '123204438484933296911567070530'), ('oauth_timestamp', '1567070530'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:10,588::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1129670098887872513&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=123204438484933296911567070530&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070530&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:10,593::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:10,596::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1129670098887872513%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D123204438484933296911567070530%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070530%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:10,597::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: YBLV1crqSWb2WdGxTftjMbXRJ2o=\
+2019-08-29 11:22:10,598::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1129670098887872513"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1129670098887872513}}\
+2019-08-29 11:22:10,599::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="123204438484933296911567070530", oauth_timestamp="1567070530", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="YBLV1crqSWb2WdGxTftjMbXRJ2o%3D"'\}\
+2019-08-29 11:22:10,601::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:10,603::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 73065\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:10 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:10 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_O9iHiiOLfeM6+6YmIS2yoA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:10 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_O9iHiiOLfeM6+6YmIS2yoA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:10 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_O9iHiiOLfeM6+6YmIS2yoA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:10 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: b2d5e34275a0e56358d71e16ffad68d4\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 885\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 179\
+header: x-transaction: 00c5336e0090335e\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-18 08:48:34  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1129670098887872513 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="123204438484933296911567070530", oauth_timestamp="1567070530", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="YBLV1crqSWb2WdGxTftjMbXRJ2o%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:11,087::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1129670098887872513 HTTP/1.1" 200 98764\
+2019-08-29 11:22:11,259::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1128161750107459584'\}\
+2019-08-29 11:22:11,262::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:11,264::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:11,266::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1128161750107459584'), ('oauth_nonce', '58139381210158205931567070531'), ('oauth_timestamp', '1567070531'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:11,267::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1128161750107459584&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=58139381210158205931567070531&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070531&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:11,268::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:11,269::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1128161750107459584%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D58139381210158205931567070531%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070531%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:11,270::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: c4CATK/bfP9zsUWV7zhTyb570oQ=\
+2019-08-29 11:22:11,271::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1128161750107459584"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1128161750107459584}}\
+2019-08-29 11:22:11,273::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="58139381210158205931567070531", oauth_timestamp="1567070531", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="c4CATK%2FbfP9zsUWV7zhTyb570oQ%3D"'\}\
+2019-08-29 11:22:11,275::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:11,278::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 98764\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:11 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:11 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_p+sxu0+OyEgraJ1xxfZGzQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:11 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_p+sxu0+OyEgraJ1xxfZGzQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:11 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_p+sxu0+OyEgraJ1xxfZGzQ=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:11 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 95abc554d7fce06794a8bcf9a40ec117\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 884\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 197\
+header: x-transaction: 00b28666008897dc\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-14 04:54:56  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1128161750107459584 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="58139381210158205931567070531", oauth_timestamp="1567070531", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="c4CATK%2FbfP9zsUWV7zhTyb570oQ%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:11,984::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1128161750107459584 HTTP/1.1" 200 91984\
+2019-08-29 11:22:12,110::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1126933177765978114'\}\
+2019-08-29 11:22:12,111::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:12,114::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:12,117::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1126933177765978114'), ('oauth_nonce', '118074273377881336941567070532'), ('oauth_timestamp', '1567070532'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:12,119::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1126933177765978114&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=118074273377881336941567070532&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070532&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:12,120::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:12,121::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1126933177765978114%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D118074273377881336941567070532%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070532%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:12,122::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: Wb2T3flGLkIEEFqVUtODNplyMDc=\
+2019-08-29 11:22:12,123::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1126933177765978114"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1126933177765978114}}\
+2019-08-29 11:22:12,125::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="118074273377881336941567070532", oauth_timestamp="1567070532", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="Wb2T3flGLkIEEFqVUtODNplyMDc%3D"'\}\
+2019-08-29 11:22:12,126::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:12,129::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 91984\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:11 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:11 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_J9lCPI0UdvGU5BdUj8M6Rg=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:11 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_J9lCPI0UdvGU5BdUj8M6Rg=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:11 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_J9lCPI0UdvGU5BdUj8M6Rg=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:11 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 9585292c6d457c5a59ea5b820dbfdd00\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 883\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 275\
+header: x-transaction: 00c66cb7009bb9c3\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-10 19:33:01  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1126933177765978114 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="118074273377881336941567070532", oauth_timestamp="1567070532", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="Wb2T3flGLkIEEFqVUtODNplyMDc%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:12,901::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1126933177765978114 HTTP/1.1" 200 107347\
+2019-08-29 11:22:13,067::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1126494216715038720'\}\
+2019-08-29 11:22:13,068::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:13,070::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:13,072::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1126494216715038720'), ('oauth_nonce', '110619308515260535971567070533'), ('oauth_timestamp', '1567070533'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:13,073::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1126494216715038720&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=110619308515260535971567070533&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070533&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:13,074::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:13,075::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1126494216715038720%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D110619308515260535971567070533%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070533%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:13,077::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: z2VYa8dpXoXZd2I5Sj1MosT8RRM=\
+2019-08-29 11:22:13,078::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1126494216715038720"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1126494216715038720}}\
+2019-08-29 11:22:13,080::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="110619308515260535971567070533", oauth_timestamp="1567070533", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="z2VYa8dpXoXZd2I5Sj1MosT8RRM%3D"'\}\
+2019-08-29 11:22:13,081::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:13,083::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 107347\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:12 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:12 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_Lty/cmM1514FOlA3gbPl1Q=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:12 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_Lty/cmM1514FOlA3gbPl1Q=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:12 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_Lty/cmM1514FOlA3gbPl1Q=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:12 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 63d39a79c65c9ee453607cacd9660754\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 882\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 344\
+header: x-transaction: 00a1faf900033036\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-09 14:28:45  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1126494216715038720 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="110619308515260535971567070533", oauth_timestamp="1567070533", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="z2VYa8dpXoXZd2I5Sj1MosT8RRM%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:13,545::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1126494216715038720 HTTP/1.1" 200 78118\
+2019-08-29 11:22:13,676::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1125854761897668611'\}\
+2019-08-29 11:22:13,676::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:13,678::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:13,679::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1125854761897668611'), ('oauth_nonce', '152179408620377066671567070533'), ('oauth_timestamp', '1567070533'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:13,681::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1125854761897668611&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=152179408620377066671567070533&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070533&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:13,682::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:13,683::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1125854761897668611%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D152179408620377066671567070533%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070533%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:13,684::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: 04qaq9z2Bxz8Uer14M5fgzyhcWA=\
+2019-08-29 11:22:13,685::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1125854761897668611"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1125854761897668611}}\
+2019-08-29 11:22:13,687::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="152179408620377066671567070533", oauth_timestamp="1567070533", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="04qaq9z2Bxz8Uer14M5fgzyhcWA%3D"'\}\
+2019-08-29 11:22:13,687::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:13,690::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 78118\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:13 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:13 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_jvtnynnVVIOn7x5XUoaBDA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:13 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_jvtnynnVVIOn7x5XUoaBDA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:13 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_jvtnynnVVIOn7x5XUoaBDA=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:13 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: e0ac7d1b54303bd32dbcb24396743416\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 881\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 174\
+header: x-transaction: 004f7bc000074b7b\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-07 20:07:47  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1125854761897668611 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="152179408620377066671567070533", oauth_timestamp="1567070533", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="04qaq9z2Bxz8Uer14M5fgzyhcWA%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:14,182::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1125854761897668611 HTTP/1.1" 200 65908\
+2019-08-29 11:22:14,324::DEBUG::tweepy.binder::binder.py::107::PARAMS: \{'id': b'venstredk', 'max_id': b'1125731471254224896'\}\
+2019-08-29 11:22:14,325::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::63::Signing request <PreparedRequest [GET]> using client <Client client_key=YiBKVRYTz2HLufb3Z5KmDfCOb, client_secret=****, resource_owner_key=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=None, nonce=None, timestamp=None>\
+2019-08-29 11:22:14,326::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::75::Including body in call to sign: False\
+2019-08-29 11:22:14,327::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::133::Collected params: [('id', 'venstredk'), ('max_id', '1125731471254224896'), ('oauth_nonce', '107109023582572942671567070534'), ('oauth_timestamp', '1567070534'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', 'YiBKVRYTz2HLufb3Z5KmDfCOb'), ('oauth_token', '1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t')]\
+2019-08-29 11:22:14,328::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::137::Normalized params: id=venstredk&max_id=1125731471254224896&oauth_consumer_key=YiBKVRYTz2HLufb3Z5KmDfCOb&oauth_nonce=107109023582572942671567070534&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1567070534&oauth_token=1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t&oauth_version=1.0\
+2019-08-29 11:22:14,329::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::138::Normalized URI: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json}}\
+2019-08-29 11:22:14,330::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::143::Signing: signature base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&id%3Dvenstredk%26max_id%3D1125731471254224896%26oauth_consumer_key%3DYiBKVRYTz2HLufb3Z5KmDfCOb%26oauth_nonce%3D107109023582572942671567070534%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1567070534%26oauth_token%3D1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t%26oauth_version%3D1.0\
+2019-08-29 11:22:14,332::DEBUG::oauthlib.oauth1.rfc5849::__init__.py::150::Signature: tq/kNJu8/KLssRZaCt1y5sxLQDU=\
+2019-08-29 11:22:14,333::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::92::Updated url: {\field{\*\fldinst{HYPERLINK "https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1125731471254224896"}}{\fldrslt \cf4 https://api.twitter.com/1.1/statuses/user_timeline.json?id=venstredk&max_id=1125731471254224896}}\
+2019-08-29 11:22:14,334::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::93::Updated headers: \{'Host': 'api.twitter.com', 'Authorization': 'OAuth oauth_nonce="107109023582572942671567070534", oauth_timestamp="1567070534", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="tq%2FkNJu8%2FKLssRZaCt1y5sxLQDU%3D"'\}\
+2019-08-29 11:22:14,335::DEBUG::requests_oauthlib.oauth1_auth::oauth1_auth.py::94::Updated body: None\
+2019-08-29 11:22:14,337::DEBUG::urllib3.connectionpool::connectionpool.py::813::Starting new HTTPS connection (1): api.twitter.com:443\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 65908\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:14 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:14 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_HZIhQ70iQwbU4ElXSHht0w=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:14 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_HZIhQ70iQwbU4ElXSHht0w=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:14 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_HZIhQ70iQwbU4ElXSHht0w=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:14 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 64bf05b4285089dd1d23dd8778c0b01c\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 880\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 192\
+header: x-transaction: 00e1eb0700654c6d\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0\
+Tweet from:  2019-05-07 11:57:52  fetched\
+send: b'GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1125731471254224896 HTTP/1.1\\r\\nAccept-Encoding: identity\\r\\nHost: api.twitter.com\\r\\nAuthorization: OAuth oauth_nonce="107109023582572942671567070534", oauth_timestamp="1567070534", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="YiBKVRYTz2HLufb3Z5KmDfCOb", oauth_token="1164799160542826498-JT2uVqJR5AevcKZRScWqKiOiA2CU2t", oauth_signature="tq%2FkNJu8%2FKLssRZaCt1y5sxLQDU%3D"\\r\\n\\r\\n'\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 2019-08-29 11:22:14,873::DEBUG::urllib3.connectionpool::connectionpool.py::393::https://api.twitter.com:443 "GET /1.1/statuses/user_timeline.json?id=venstredk&max_id=1125731471254224896 HTTP/1.1" 200 99655\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb5 reply: 'HTTP/1.1 200 OK\\r\\n'\
+header: cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0\
+header: content-disposition: attachment; filename=json.json\
+header: content-length: 99655\
+header: content-type: application/json;charset=utf-8\
+header: date: Thu, 29 Aug 2019 09:22:14 GMT\
+header: expires: Tue, 31 Mar 1981 05:00:00 GMT\
+header: last-modified: Thu, 29 Aug 2019 09:22:14 GMT\
+header: pragma: no-cache\
+header: server: tsa_o\
+header: set-cookie: personalization_id="v1_6rLQ6vuTkUC3hxHGvB5+Zg=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:14 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_6rLQ6vuTkUC3hxHGvB5+Zg=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:14 GMT; Path=/; Domain=.twitter.com\
+header: set-cookie: personalization_id="v1_6rLQ6vuTkUC3hxHGvB5+Zg=="; Max-Age=63072000; Expires=Sat, 28 Aug 2021 09:22:14 GMT; Path=/; Domain=.twitter.com\
+header: status: 200 OK\
+header: strict-transport-security: max-age=631138519\
+header: x-access-level: read-write\
+header: x-connection-hash: 80b1ce2dcb54fa3902f9756406395a89\
+header: x-content-type-options: nosniff\
+header: x-frame-options: SAMEORIGIN\
+header: x-rate-limit-limit: 900\
+header: x-rate-limit-remaining: 879\
+header: x-rate-limit-reset: 1567071419\
+header: x-response-time: 231\
+header: x-transaction: 0075903b004a513e\
+header: x-twitter-response-tags: BouncerCompliant\
+header: x-xss-protection: 0}
